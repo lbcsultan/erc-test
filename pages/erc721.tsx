@@ -71,12 +71,12 @@ const Home: NextPage = () => {
         <p>type: {nft?.type}</p>
         <p>name: {nft?.metadata.name}</p>
         <p>description: {nft?.metadata.description}</p>
-        <Image
+        {/* <Image
           src={nft?.metadata.image}
           width={100}
           height={100}
           alt="ipfs image"
-        />
+        /> */}
       </div>
     </div>
   )
