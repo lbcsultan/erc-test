@@ -1,55 +1,35 @@
-import { ConnectWallet } from "@thirdweb-dev/react";
-import type { NextPage } from "next";
-import styles from "../styles/Home.module.css";
+import { ConnectWallet } from '@thirdweb-dev/react'
+import type { NextPage } from 'next'
 
 const Home: NextPage = () => {
   return (
-    <div className={styles.container}>
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="http://thirdweb.com/">thirdweb</a>!
-        </h1>
-
-        <p className={styles.description}>
-          Get started by configuring your desired network in{" "}
-          <code className={styles.code}>pages/_app.tsx</code>, then modify the{" "}
-          <code className={styles.code}>pages/index.tsx</code> file!
-        </p>
-
-        <div className={styles.connect}>
-          <ConnectWallet />
+    <div className="container mx-auto ">
+      <h1 className="text-3xl pt-4">ERC Standard Contracts </h1>
+      <main className="pt-4">
+        <div className="m-4">
+          <h1 className="text-2xl">ERC-20: Token </h1>
+          <p>Token standard</p>
+          <a href="https://ethereum.org/en/developers/docs/standards/tokens/erc-20/">
+            ERC-20
+          </a>
         </div>
-
-        <div className={styles.grid}>
-          <a href="https://portal.thirdweb.com/" className={styles.card}>
-            <h2>Portal &rarr;</h2>
-            <p>
-              Guides, references and resources that will help you build with
-              thirdweb.
-            </p>
+        <div className="m-4">
+          <h1 className="text-2xl">ERC-721: NFT </h1>
+          <p>NFT - Non-Fungible Token</p>
+          <a href="https://ethereum.org/en/developers/docs/standards/tokens/erc-721/">
+            ERC-721
           </a>
-
-          <a href="https://thirdweb.com/dashboard" className={styles.card}>
-            <h2>Dashboard &rarr;</h2>
-            <p>
-              Deploy, configure and manage your smart contracts from the
-              dashboard.
-            </p>
-          </a>
-
-          <a
-            href="https://portal.thirdweb.com/templates"
-            className={styles.card}
-          >
-            <h2>Templates &rarr;</h2>
-            <p>
-              Discover and clone template projects showcasing thirdweb features.
-            </p>
+        </div>
+        <div className="m-4">
+          <h1 className="text-2xl">ERC-1155: Multi-Token </h1>
+          <p>Multi-token</p>
+          <a href="https://ethereum.org/en/developers/docs/standards/tokens/erc-1155/">
+            ERC-1155
           </a>
         </div>
       </main>
     </div>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home
